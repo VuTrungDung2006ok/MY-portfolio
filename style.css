@@ -278,4 +278,306 @@ li:hover {
   object-fit: cover;
 }
 
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+}
 
+/* Slide */
+.slide {
+  display: none;
+  text-align: center;
+  padding: 30px;
+  animation: fade 0.8s ease-in-out;
+}
+
+/* Hiệu ứng chuyển động */
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hiển thị slide hiện tại */
+.active {
+  display: block;
+}
+
+/* Slide Title */
+.slide h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+/* Slide Description */
+.slide p {
+  font-size: 1.2em;
+  color: #ddd;
+}
+
+/* Image Grid */
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Căn giữa nội dung và giới hạn chiều rộng */
+.academic-achievements {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Bố cục tổng thể */
+.academic-achievements {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Tiêu đề */
+.academic-achievements h2 {
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Văn bản chính */
+.achievements-text p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  color: #ddd;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Nhấn mạnh nội dung quan trọng */
+.achievements-text strong {
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* Căn chỉnh ảnh cho đẹp */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.image-gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Nút điều hướng */
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.slider-buttons button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.slider-buttons button:hover {
+  background-color: #d62828;
+  transform: scale(1.05);
+}
+/* Bố cục tổng thể */
+.extracurricular-activities {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Tiêu đề */
+.extracurricular-activities h2 {
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Văn bản chính */
+.activities-text p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  color: #ddd;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Nhấn mạnh nội dung quan trọng */
+.activities-text strong {
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* Căn chỉnh ảnh cho đẹp */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.image-gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Nút điều hướng */
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.slider-buttons button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.slider-buttons button:hover {
+  background-color: #d62828;
+  transform: scale(1.05);
+}
+/* Bố cục tổng thể */
+.sports-competitions {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Tiêu đề */
+.sports-competitions h2 {
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Văn bản chính */
+.sports-text p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  color: #ddd;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Nhấn mạnh nội dung quan trọng */
+.sports-text strong {
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* Căn chỉnh ảnh */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.image-gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Nút điều hướng */
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.slider-buttons button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.slider-buttons button:hover {
+  background-color: #d62828;
+  transform: scale(1.05);
+}
