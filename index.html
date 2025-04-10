@@ -34,21 +34,43 @@
       </section>
     
     <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Outstanding Student (2022-2023)</strong></li>
-                <li><strong>Outstanding Student (2023-2024)</strong></li>
-                <li><strong>Best Leader (2022-2023)</strong></li>
-            </ul>
-            <div class="image-gallery">
-                <img src="anhlop10.jpg" alt="Grade 10 Certificate" >
-                <img src="anhlop11.jpg" alt="Grade 11 Certificate">
-                <img src="best.jpg" alt="Best Leader Award">
-            </div>
-        </div>
-    </section>
+<section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Outstanding Student (2022-2023)</strong></li>
+        <li><strong>Outstanding Student (2023-2024)</strong></li>
+        <li><strong>Best Leader (2022-2023)</strong></li>
+      </ul>
+  
+      <div class="image-gallery">
+        <img src="anhlop10.jpg" alt="Grade 10 Certificate" onclick="openModal('anhlop10.jpg', 'This is my Grade 10 Outstanding Student Certificate')">
+        <img src="anhlop11.jpg" alt="Grade 11 Certificate" onclick="openModal('anhlop11.jpg', 'This is my Grade 11 Outstanding Student Certificate.')">
+        <img src="best.jpg" alt="Best Leader Award" onclick="openModal('best.jpg', 'This award was given to me for being the best leader in my school.')">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal Viewer -->
+  <div id="myModal" class="modal">
+    <div class="modal-content-wrapper">
+      <img class="modal-image" id="modalImage">
+      <div class="modal-caption" id="modalCaption"></div>
+    </div>
+    <span class="close" onclick="closeModal()">&times;</span>
+  </div>
+  
+  <script>
+    function openModal(imageSrc, captionText) {
+      document.getElementById("myModal").style.display = "block";
+      document.getElementById("modalImage").src = imageSrc;
+      document.getElementById("modalCaption").innerText = captionText;
+    }
+  
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
 
     <!-- Achievements Section -->
     <section id="achievements">
@@ -92,7 +114,7 @@
                     <h3>My Video Project</h3>
                     <p>A showcase video of high school projects.</p>
                     <iframe src="https://www.youtube.com/embed/PwHxNZpjmEg?si=cdLxIZrG3zN9PCkm" 
-                        width="200px" height="420px" allow="autoplay" allowfullscreen>
+                        width="200px" height="420px" allow="autoplay">
                     </iframe>
                 </div>
     </section>    
