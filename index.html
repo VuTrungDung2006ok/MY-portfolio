@@ -14,7 +14,7 @@
     <header>
         <div class="container">
             <h1>Vu Trung Dung</h1>
-            <p>FPT High School Student | <strong>D.O.B:</strong> 03/03/2006 | <strong>Interest:</strong> Music, Game, Sport</p>
+            <p>FPT High School Student | <span><strong>D.O.B:</strong></span> 03/03/2006 | <strong>Interest:</strong> Music, Game, Sport</p>
             <a href="index.html" class="btn">Home</a>
             <a href="index2.html" class="btn">My Experience In Highschool</a>
         </div>
@@ -32,60 +32,76 @@
         </div>
         <img src="anh.jpg" alt="Vu Trung Dung">
       </section>
-    
     <!-- Education Section -->
 <section id="education">
     <div class="container">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Outstanding Student (2022-2023)</strong></li>
-        <li><strong>Outstanding Student (2023-2024)</strong></li>
-        <li><strong>Best Leader (2022-2023)</strong></li>
-      </ul>
-  
+      <h2>Education </h2>
+      <p class="intro-text">Education has always been more than just <strong>grades</strong> and <strong>certificates</strong> — it has been a transformative journey that shaped who I am today. Throughout my high school years, I have embraced every opportunity to grow <strong>academically</strong>, lead with <strong>purpose</strong>, and contribute <strong>meaningfully</strong> to my school community.</p>
+      <p class="intro-text">The following achievements are not only a reflection of my commitment to excellence, but also a testament to my <strong>resilience</strong>, <strong>adaptability</strong>, and <strong>leadership</strong>. Each milestone has helped me build a strong foundation for future success, both in university and beyond.</p>
       <div class="image-gallery">
-        <img src="anhlop10.jpg" alt="Grade 10 Certificate" onclick="openModal('anhlop10.jpg', 'This is my Grade 10 Outstanding Student Certificate')">
-        <img src="anhlop11.jpg" alt="Grade 11 Certificate" onclick="openModal('anhlop11.jpg', 'This is my Grade 11 Outstanding Student Certificate.')">
-        <img src="best.jpg" alt="Best Leader Award" onclick="openModal('best.jpg', 'This award was given to me for being the best leader in my school.')">
+        <img src="anhlop10.jpg" alt="Grade 10 Certificate" onclick="openModal('anhlop10.jpg', `
+    <p><strong>🏅 Grade 10 Outstanding Student Award</strong></p>
+    <p>This certificate marked a meaningful milestone in my high school journey. Just five months after entering a completely new environment, I was honored to stand on stage and be recognized among outstanding peers.</p>
+    <p>It was more than an award — it was a moment of affirmation. I had worked hard to adapt, improve, and prove myself. Receiving this award gave me a sense of pride, belonging, and motivation.</p>
+    <p>From that moment on, I felt more confident in pursuing academic excel to my passion for coding and computer science. This achievement continues to inspire me to aim higher and never stop learning.</p>
+    <br>`)">
+        <img src="best.jpg" alt="Best Leader Award" onclick="openModal('best.jpg', `
+        <p><strong>🏆 Best Leader (2022–2023)</strong></p>
+        <p>I was honored to receive the <strong>Best Leader</strong> title in Grade 10 in recognition of my dedication to both academic excellence and community involvement.</p>
+        <p>Over the course of the academic year, I maintained a consistently high GPA while demonstrating strong leadership through a wide range of activities. These included organizing and participating in teamwork-based competitions such as tug-of-war, as well as actively supporting my class in achieving the school’s highest conduct scores.</p>
+        <p>Beyond academics, I embraced various extracurricular responsibilities. I served as a master of ceremonies for school events and contributed to several acclaimed cheerleading performances. These experiences not only strengthened my public speaking and organizational skills but also deepened my commitment to collaborative success and school spirit.</p>
+        <br>`);">
+        <img src="anhlop11.jpg" alt="Grade 11 Certificate" onclick="openModal('anhlop11.jpg', `
+        <p><strong>🎓 Grade 11 Outstanding Student Award</strong></p>
+        <p>This certificate reflects a year marked by academic excellence, personal growth, and meaningful contributions to both my school and community.</p>
+        <p>Throughout Grade 11, I actively participated in national and regional informatics competitions, including <strong>HKICO, FCO</strong>, and <strong>HueICT</strong>, earning several prestigious awards that further fueled my passion for computer science.</p>
+        <p>At the same time, I continued to lead our school’s cheerleading team, performing at major events such as <strong>Orange Day</strong>—a charity marathon involving the entire student body—and a cultural showcase at <strong>FPT University in Hanoi</strong>. These activities allowed me to develop leadership, teamwork, and time management skills.</p>
+        <p>Despite my packed schedule, I ranked <strong>third in the school</strong> with a GPA of <strong>9.2</strong>. This award serves as a testament to my ability to balance rigorous academic demands with active extracurricular involvement.</p>
+        <br>`);">
       </div>
+      <p></p>
+      <p class="outro-text">These educational achievements represent more than just accolades — they capture my evolution as a student, leader, and community member. From overcoming the challenges of a new environment in Grade 10 to maintaining a top academic ranking in Grade 11 while balancing extracurricular responsibilities, I have continuously pushed my boundaries.</p>
+      <p class="outro-text">As I move forward, I carry with me the lessons, values, and experiences that these moments have taught me. They fuel my ambition to make a positive impact in the field of <strong>computer science</strong>, and they remind me that with <strong>passion</strong> and <strong>perseverance</strong>, no goal is too distant.</p>
     </div>
   </section>
   
-  <!-- Modal Viewer -->
-  <div id="myModal" class="modal">
-    <div class="modal-content-wrapper">
-      <img class="modal-image" id="modalImage">
-      <div class="modal-caption" id="modalCaption"></div>
-    </div>
-    <span class="close" onclick="closeModal()">&times;</span>
-  </div>
-  
-  <script>
-    function openModal(imageSrc, captionText) {
-      document.getElementById("myModal").style.display = "block";
-      document.getElementById("modalImage").src = imageSrc;
-      document.getElementById("modalCaption").innerText = captionText;
-    }
-  
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-    }
-  </script>
-
     <!-- Achievements Section -->
     <section id="achievements">
         <div class="container">
-            <h2>Achievements</h2>
-            <ul>
-                <li><strong>Silver Medal</strong> - HK International Computational Olympiad (2023-2024)</li>
-                <li><strong>Merit Award</strong> - International Informatics Olympiad FCO (2024-2025)</li>
-                <li><strong>Merit Award</strong> - City-level Academic Excellence Competition (2024-2025)</li>
-            </ul>
+            <h2>Informatics Achievements</h2>
+            <p class="intro-text">
+              My passion for <strong>computer science</strong> has been consistently reflected through my active participation in a wide range of informatics competitions. Over the past two years, I have challenged myself in both national and international arenas, earning several prestigious awards that highlight not only my <strong>technical ability</strong> but also my <strong>dedication and perseverance</strong>.
+            </p>
+            <p class="intro-text">
+              From earning Silver Awards at the Hong Kong International Computational Olympiad (HKICO), to pushing my limits in the Future Coder Olympiad (FCO), and finally securing a Merit Award in the highly competitive Citywide Informatics Competition for Excellent Students, each achievement has contributed significantly to my growth. These experiences have deepened my understanding of coding, strengthened my problem-solving mindset, and reaffirmed my commitment to pursuing a future in <strong>computer science</strong> and <strong>artificial intelligence</strong>.
+            </p>            
             <div class="image-gallery">
-                <img src="anhsilve.jpg" alt="Silver Medal Certificate">
-                <img src="merit.jpg" alt="Merit Award Certificate">
-                <img src="a12.jpg" alt="Merit Award Certificate">
+              <img src="anhsilve.jpg" alt="Silver Medal Certificate" onclick="openModal('anhsilve.jpg', `
+              <p><strong>🥈 Silver Awards – HKICO (National and International Rounds)</strong></p>
+                <p>This achievement represents the culmination of a year-long journey in mastering Python through dedicated self-study and persistent practice. As I gradually built a strong foundation in programming, I gained the confidence to compete in the <strong>Hong Kong International Computational Olympiad (HKICO)</strong>.</p>
+                <p>Receiving Silver Awards in both the national and international rounds was a significant milestone. It validated my abilities in computer science and sparked a deeper commitment to academic and competitive excellence in the field.</p>
+                <p>More than just a certificate, this award marked a turning point in my learning journey, serving as a bridge between my early interest in coding and the more intense academic challenges I would take on in Grade 12, including preparation for the national high school graduation exam.</p>
+                <br>`);">
+                <img src="merit.jpg" alt="Merit Award Certificate" onclick="openModal('merit.jpg',`
+                <p><strong>🏅 Merit Award – FERMAT Computational Olympiad (FCO)</strong></p>
+                <p>Building upon my achievements at HKICO, I sought to push my boundaries further by participating in the <strong>FERMAT Computational Olympiad (FCO)</strong>. Entering the competition with confidence from prior experiences, I quickly realized that my current knowledge, while valuable, was not yet sufficient to attain a higher distinction.</p>
+                <p>Although I earned a Merit Award rather than the result I had initially aimed for, this experience proved invaluable. It helped me uncover specific areas in which my understanding was still limited and offered a clearer direction for future growth.</p>
+                <p>This turning point not only deepened my appreciation for the complexities of computer science but also reinforced my determination to continue learning and improving. It was a powerful reminder that setbacks can be catalysts for meaningful progress.</p>
+                <br>`);">
+                <img src="a12.jpg" alt="Merit Award Certificate" onclick="openModal('a12.jpg', `
+                <p><strong>🏅 Merit Award – Citywide Informatics Competition for Excellent Students</strong></p>
+                <p>This city-level contest for outstanding students represented a major academic milestone in my high school journey. Officially recognized by universities and scholarship programs, the competition was not only a measure of skill but also a gateway to future academic opportunities.</p>
+                <p>Despite its significance, I faced an unexpected challenge: due to a miscommunication at school, I was informed of my nomination only two weeks before the exam. Nevertheless, I refused to let this setback define my performance. I devoted myself entirely to a period of intense preparation, maximizing every hour available.</p>
+                <p>During the three-hour examination, I remained focused and determined. Although I narrowly missed the third prize by just one point, I was proud to receive a Merit Award. More importantly, the experience taught me valuable lessons about resilience, mental fortitude, and the ability to perform under pressure—qualities that continue to shape my academic and personal growth.</p>
+                <br>`);"> 
             </div>
+            <h3>🌟 Reflections and Aspirations</h3>
+                <p class="outro-text">
+                Each certificate and achievement in this portfolio tells a story — not just of success, but of <strong>growth, resilience</strong>, and <strong>self-discovery</strong>. From the early days of adapting to a new environment to the moments of academic excellence and leadership, I have constantly strived to challenge myself and make meaningful contributions to my school community.
+                </p>
+                <p class="outro-text">
+                What drives me is not merely the pursuit of awards, but the desire to <strong>continuously improve</strong>, learn from every experience, and turn setbacks into motivation. As I look toward the future, I am committed to deepening my knowledge in computer science, especially in the field of <strong>cybersecurity and artificial intelligence</strong>. I believe that these achievements have laid a solid foundation for me to thrive in university and beyond.
+                </p>
         </div>
     </section>
 
@@ -131,5 +147,32 @@
             </ul>
         </div>
     </section>
+    <script>
+      function openModal(imageSrc, captionText) {
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("modalImage").src = imageSrc;
+        document.getElementById("modalCaption").innerHTML = captionText;
+      }
+    
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+  
+      window.onclick = function(event) {
+        const modal = document.getElementById("myModal");
+          if (event.target == modal) {
+            modal.style.display = "none";
+            }
+      }
+    </script>
+    <!-- Modal Viewer -->
+  <div id="myModal" class="modal">
+    <div class="modal-content-wrapper">
+      <img class="modal-image" id="modalImage">
+      <div class="modal-caption" id="modalCaption"></div>
+    </div>
+    <span class="close" onclick="closeModal()">&times;</span>
+  </div>
 </body>
+
 </html>
