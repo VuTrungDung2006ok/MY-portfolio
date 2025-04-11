@@ -594,6 +594,17 @@ li:hover {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes scaleUp {
+  from {transform: scale(0.95);}
+  to {transform: scale(1);}
 }
 
 .modal-content-wrapper {
@@ -608,6 +619,7 @@ li:hover {
   max-width: 1000px;
   gap: 30px;
   flex-wrap: wrap;
+  animation: scaleUp 0.3s ease;
 }
 
 .modal-image {
@@ -626,12 +638,56 @@ li:hover {
   line-height: 1.5;
 }
 
-.close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
+.modal-content p {
+  line-height: 1.8;
 }
+/* Title styling */
+      h2, h3 {
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        position: relative;
+        text-transform: uppercase;
+        animation: fadeInDown 1s ease-in-out;
+      }
+      
+      h2::after, h3::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        margin: 0.5rem auto 0;
+        background: linear-gradient(to right, #fca311, #ffcc00);
+        border-radius: 5px;
+      }
+      
+      /* Paragraph styling */
+      .intro-text, .outro-text {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #e0e0e0;
+        text-align: justify;
+        margin: 0 auto 1.5rem auto;
+        padding: 0 1rem;
+        max-width: 900px;
+        animation: fadeInUp 1s ease-in-out;
+      }
+      
+      /* Emphasized text */
+      strong {
+        color: #ffb703;
+        font-weight: bold;
+      }
+      
+      /* Animation keyframes */
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
